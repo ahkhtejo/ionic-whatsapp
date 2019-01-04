@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="hcolor">
+    <ion-title>الملف الشخصي</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-image">
+    <img src="{{imgurl}}">
+  </div>
+
+  <div class="abouttext"> 
+    <p>
+      هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها
+    </p>
+  </div>
+
+  <div>
+    <button ion-button round outline (click)="chooseimage()">  تعديل الملف الشخصي  </button>
+  </div>
+
+  <div>
+    <button ion-button round outline (click)="logout()">تسجيل خروج</button>
+  </div>
+  
+  <!--
+  <div [hidden]="!moveon">
+    <button ion-button round outline (click)="proceed()"></button>
+  </div>
+  <div [hidden]="moveon">
+    <button ion-button round outline (click)="updateproceed()">Upload & proceed</button>
+  </div>
+  -->
+</ion-content>

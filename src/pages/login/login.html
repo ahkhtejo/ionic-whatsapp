@@ -1,0 +1,43 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>هلا</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background" style=" direction: rtl;">
+  <ion-card>
+    <ion-card-header>
+     تسجيل الدخول
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <div class="spacer" style="height: 10px;"></div>
+        <ion-item>
+          <ion-input type="email" placeholder="ايميل" [(ngModel)]="credentials.email"></ion-input>
+        </ion-item>
+        <div class="spacer" style="height: 5px;"></div>
+        <ion-item>
+          <ion-input type="password" placeholder="كلمة السر" [(ngModel)]="credentials.password"></ion-input>
+        </ion-item>
+        
+       
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button block round outline color="light" (click)="signin()">تسجيل دخول</button>
+        <div class="spacer" style="height: 10px;"></div>
+        <p>او</p>
+        <div class="spacer" style="height: 10px;"></div>
+        
+        <a (click)="passwordreset()">هل نسيت كلمة المرور    ? <b>  تحتاج مساعدة </b></a>
+
+        <div class="spacer" style="height: 10px;"></div>
+        <button ion-button clear full color="light" (click)="signup()">ليس لديك حساب ؟ تسجيل جديد</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+
+</ion-content>
